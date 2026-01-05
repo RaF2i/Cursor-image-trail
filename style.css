@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #1e1e1e;
+}
+
+h1{
+    color: #fff;
+    font-size: 5vw;
+    font-weight: 500;
+    user-select:none;
+}
+
+p{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: monospace;
+    font-weight: 600;
+    user-select: none;
+}
+
+section {
+    position: relative;
+    width: 100vw;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+.trail-container{
+    background-color: #fcfcfc;
+
+}
+
+.text{
+    z-index: 9999;
+}
+
+
+.trail-img{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    transform-origin: center;
+    pointer-events: none;
+    will-change: transform;
+}
